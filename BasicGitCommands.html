@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Index.css">
     <title>Basic Git Commands</title>
 </head>
 <body>
@@ -45,16 +46,29 @@
                 <li><strong>git branch -d &ltname&gt</strong> # Delete a branch</li>
             </ol>
         </li>
-        <li>Below image is the result of git branch command</li>
-        <img src="Images/Branch/ListOfBranches-1.png" width="250px" alt="List of Branches 1"><br>
-        <li>Below image is the result of git branch command after git branch -d Lesson2</li>
-        <img src="Images/Branch/LIstOfBranches-2.png" alt="List of branches 2" width="250px"><br>
-        <li>Below image is the result of git branch command after git branch -d Lesson3</li>
-        <img src="Images/Branch/LIstOfBranches-3.png" width ="250px" alt="List of branches 2"><br>
-        <li>Summary of all git branch commands</li>
-        <img src="Images/Branch/BranchCommands.png"  alt="branchCommands" width="600px"><br>
-        <li>Below image is the result of above image commands</li>
-        <img src="Images/Branch/ListOfBranches-4.png" alt="listOfBranches" width="250px"><br>
+       
+        <li><strong>git merge :</strong>Merge changes from </li>
+    </ol>
+    <h4>Merge</h4>
+    <ol>
+        <li>All you have to do is check out the branch you wish to merge into and then run the git merge command:</li>
+        <li>Master Branch Index</li>
+        <img src="/Images/Merge/1.MasterBranch.png" alt="MasterBranch" width="700px"><br>
+        <li>Iss53 Branch Creation from Master branch</li>
+        <img src="/Images/Merge/2.Iss53BranchIndex.png" alt="Iss53BranchIndex" width="700px"><br>
+        <li>Iss53 Branch Commit</li>
+        <img src="/Images/Merge/3.Iss53BranchCommit.png" alt="Iss53BranchCommit" width="700px"><br>
+        <li>All Branches from Master pointing index is C2</li>
+        <img src="/Images/Merge/4.AllBranches.png" alt="AllBranches" width="700px"><br>
+        <li>HotFix Branch got merged to master, this is fast-forward merge there is not merge commit.</li>
+        <img src="/Images/Merge/5.HotFixGotMergedToMaster.png" alt="HotFixGotMergedToMaster" width="700px"><br>
+        <li>Work is continue in Iss53 branch latest commit is C5</li>
+        <img src="/Images/Merge/6.WorkContinueIss53.png" alt="WorkContinue in Iss53 branch" width="700px"><br>
+        <li>Before merging iss53 branch to master, below picture show the current index. Here git will create merge commit, as Ancestor got change from C2 to C4 after hotfix branch merge. This is called as three-way merge.</li>
+        <img src="/Images/Merge/7.TypicalMerge.png" alt="TypicalMerge" width="700px"><br>
+        <li>MergeCommit</li>
+        <img src="/Images/Merge/8.MergeCommit.png" alt="MergeCommit" width="700px"><br>
+
     </ol>
 </body>
 </html>
