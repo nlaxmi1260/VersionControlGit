@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitCommands</title>
+</head>
+<body>
+    <h3> Git Commands </h3>
+    <p>
+        Version Control : <br>
+     <b> Git </b> : The most widely used distributed version control system. <br>
+     <b> GitHub / GitLab / Bitbucket </b> : Platforms for Git repository hosting, code collaboration, and CI/CD integration.
+    </p>
+    <ol>
+        <li>Git Install
+            <ol>
+                <li>install homebrew</li>
+                <li><b>brew install git</b></li>
+                <li><b>git</b> :to check git installed or not</li>
+                <li><b>git --version</b> : to check which version of git is installed</li>
+                <li><b>git --help</b>: to know how to use git commands</li>
+            </ol>
+        </li>
+        <li>git uninstall through homebrew
+            <ol>
+                <li><b>brew uninstall git</b></li>
+                <li><b>rm -rf /opt/homebrew/etc/gitconfig</b></li>
+                <li><b> ls /opt/homebrew/etc</b></li>
+            </ol>
+        </li>
+        <li>Git configure to GitHub</li>
+        <li>Basic Git Commands 
+        <ol>
+            <li> <b>git init </b>: Initialize a new Git repository in the current directory.</li>
+            <li><b> git clone &lt repository url &gt </b>:
+                Clone a remote repository to your local machine.</li>
+            <li><b>git status</b> :Show the status of the working directory and staging area, displaying changes and untracked files.</li>
+            <li><b>git add &lt file-name &gt</b> :Add files to the staging area. This command prepares your files for a commit.</li>
+            <li><b>git commit -m "commit message"</b> : 
+                Commit the staged changes to the local repository with a message.</li>
+            <li><b>git configure local to remote </b>
+                git config --global --edit </li>
+            <li><b> git log</b> : Show the commit history for the current branch. </li>
+            <li><b>git diff</b> : Show changes between commits, branches, or the working directory and the index.</li>
+            <li><b>git push origin &ltbranch-name &gt</b> :
+                Push your local commits to a remote repository.
+            </li>
+            <li><b>git pull origin &lt branch-name &gt</b>:
+                Fetch changes from a remote repository and merge them into the current branch
+            </li>
+            <li><b>git checkout &lt branch-name &gt</b> : 
+                Switch branches or restore working tree files.
+            </li>
+            <li><b>git branch</b> :
+            <ol>
+                <li><b>git branch</b> : To list branches</li>
+                <li><b>git branch &lt branch-name &gt</b>: to create a branch </li>
+                <li><b>git branch -d &lt branch-name &gt </b> : to delete a bramch</li>
+            </ol></li>
+            <li>file status : untracked -> unstage -> modified </li>
+        </ol>
+        </li>
+        <li>Branching & Mergeing</li>
+        <li>Undoing Changes</li>
+        <li>Collaboration (Remote Repositories)</li>
+        <li>Advanced Git Commands</li>
+        <li>git Config & Aliases </li>
+    </ol>
+</body>
+</html>
