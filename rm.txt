@@ -1,3 +1,5 @@
+testing after deleting contents in config file
+
 testing push now without sshh
 
 git rm filename
