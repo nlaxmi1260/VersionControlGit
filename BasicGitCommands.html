@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/Index.css">
     <title>Basic Git Commands</title>
 </head>
+
 <body>
-    <h1>Git Commands</h1>
-    <h3>Basic Git Commands</h3>
+    <h1> Git Commands </h1>
+    <h3> Basic Git Commands </h3>
     <ol>
         <li><b>git init:</b> Initialize a new Git repository in the current directory</li>
-        <li><b>git status:</b> Shows the status of working directory and staging area, displaying changes and untracked files.</li>
-        <li>Untracked files are the files which git is not tracking.</li>
-        <li><b>git add  &lt file-name &gt:</b> Add given file to the stageing area.</li>
-        <li><b>git add . :</b> Add all untracked files to the stageing area.</li>
-        <li><b>git rm --cached &lt file-name &gt :</b> Remove file from staging area to untracked area.</li>
-        <li><b>git commit -m "your coomit message":</b> Commit the staged changes to the local repository with a message.</li>
-        <li><b>git log:</b> Show the commit history for the current branch.</li>
-        <li><b>git diff:</b> Show changes between commits ,branches or the working directoy and the index. </li>
-        <li><b>git help commit:</b>Help for the commit command.</li>
-        <li><b>git checkout &lt branch-name &gt:</b>Switch branches or restore working tree files.</li>
-        <li><b>git branch:</b>To list branches</li>
-        <li><b>git branch &lt branch-name &gt:</b>To create a new branch.</li>
-        <li><b>git branch -d &lt branch-name &gt:</b>To delete a branch.</li>
-        <li><b>git rm &lt file_name &gt:</b>To remove a file.</li>
-        <li><b>git restore &lt file_name &gt</b>to discard changes in working directory i.e previous commit changes will be avalable.</li>
-        <li><b>git restore --staged &lt file_name &gt</b></li>
-        <li><b>git rm &lt file_name &gt : To remove a file</b></li>
-        <li><b>git rm --cached &lt file_name &gt : staged to untracked</b></li>
-        <li>Loving Git !!!</li>
+        <li><b>git status:</b> Shows the status of working directory and staging area, displaying changes and untracked
+            files.
+            <ol>
+                <li><b>untracked</b>: Untracked files are the files which git is not tracking.</li>
+                <li><b>staged</b>: Staged Changes means the changes that you have decided to commit…</li>
+                <li><b>commited</b>: Commit status allows you to mark commits with status information from other systems.</li>
+                <li><b>modified</b>: After commited the file you again modified the file .</li>
+                <li><b>deleted</b>: The status of a file is deleted either to restore or you have to commit the changes.</li>
+            </ol>
+        
+        </li>
+        <li><b>git add &lt;file-name&gt;:</b> Add given file to the stageing area.</li>
+        <li><b>git add .</b> : Add all untracked files to the stageing area.</li>
+        <li><b>git rm --cached &lt;file-name &gt;:</b> Remove file from staging area to untracked area.</li>
+        <li><b>git commit -m "your commit message"</b> : Commit the staged changes to the local repository with a
+            message.</li>
+        <li><b>git log</b> : Show the commit history for the current branch.</li>
+        <li><b>git diff</b> : Show changes between commits ,branches or the working directoy and the index. </li>
+        <li><b>git help commit</b> : Help for the commit command.</li>
+        <li><b>git checkout &lt;branch-name&gt;</b>: Switch branches or restore working tree files.</li>
+        <li><b>git rm &lt;file_name &gt;</b>: To remove a file.</li>
+        <li><b>git restore &lt; file_name &gt;</b>: To discard changes in working directory i.e previous commit changes will
+            be avalable.</li>
+        <li><b>git restore --staged &lt;file_name &gt;</b></li>
+        <li><b>git rm &lt;file_name &gt;: To remove a file</b></li>
+        <li><b>git rm --cached &lt;file_name &gt;: staged to untracked</b></li>
     </ol>
-    <h4> Uncovered Commands</h4>
+    <h3> Uncovered Commands</h3>
     <ol>
         <li>clone</li>
         <li>push</li>
         <li>pull</li>
     </ol>
-    <h3> Branching & Merging </h3>
+    <h3> Branching </h3>
     <ol>
         <li><strong>git branch :</strong> Manage branches
             <ol>
                 <li><strong>git branch</strong> # List all branches</li>
-                <li><strong>git branch &lt; name &gt;</strong> # Create a new branch</li>
-                <li><strong>git branch -d &ltname&gt</strong> # Delete a branch</li>
+                <li><strong>git branch &lt;name&gt;</strong> # Create a new branch</li>
+                <li><strong>git branch -d &lt;name&gt;</strong> # Delete a branch</li>
             </ol>
         </li>
+<<<<<<< Updated upstream
        
         <li><strong>git merge :</strong>Merge changes from </li>
+=======
+        <li>Below image is the result of git branch command</li>
+        <img src="Images/Branch/ListOfBranches-1.png" width="250px" alt="List of Branches 1"><br>
+        <li>Below image is the result of git branch command after git branch -d Lesson2</li>
+        <img src="Images/Branch/LIstOfBranches-2.png" alt="List of branches 2" width="250px"><br>
+        <li>Below image is the result of git branch command after git branch -d Lesson3</li>
+        <img src="Images/Branch/LIstOfBranches-3.png" width="250px" alt="List of branches 2"><br>
+        <li>Summary of all git branch commands</li>
+        <img src="Images/Branch/BranchCommands.png" alt="branchCommands" width="600px"><br>
+        <li>Below image is the result of above image commands</li>
+        <img src="Images/Branch/ListOfBranches-4.png" alt="listOfBranches" width="250px"><br>
+>>>>>>> Stashed changes
     </ol>
-    <h4>Merge</h4>
+    <h3> Mergeing </h3>
     <ol>
-        <li>All you have to do is check out the branch you wish to merge into and then run the git merge command:</li>
+        <li>All you have to do is check out the branch you wish to merge into and then run the git merge command </li>
         <li>Master Branch Index</li>
         <img src="/Images/Merge/1.MasterBranch.png" alt="MasterBranch" width="700px"><br>
         <li>Iss53 Branch Creation from Master branch</li>
@@ -64,7 +86,9 @@
         <img src="/Images/Merge/5.HotFixGotMergedToMaster.png" alt="HotFixGotMergedToMaster" width="700px"><br>
         <li>Work is continue in Iss53 branch latest commit is C5</li>
         <img src="/Images/Merge/6.WorkContinueIss53.png" alt="WorkContinue in Iss53 branch" width="700px"><br>
-        <li>Before merging iss53 branch to master, below picture show the current index. Here git will create merge commit, as Ancestor got change from C2 to C4 after hotfix branch merge. This is called as three-way merge.</li>
+        <li>Before merging iss53 branch to master, below picture show the current index. Here git will create merge
+            commit, as Ancestor got change from C2 to C4 after hotfix branch merge. This is called as three-way merge.
+        </li>
         <img src="/Images/Merge/7.TypicalMerge.png" alt="TypicalMerge" width="700px"><br>
         <li>MergeCommit</li>
         <img src="/Images/Merge/8.MergeCommit.png" alt="MergeCommit" width="700px"><br>
@@ -72,7 +96,112 @@
         <img src="/Images/Merge/9.MergeConflitSection2.png" alt="Merge conflict section" width="700px"> <br>
         <li>Merge section2 to master</li>
         <img src="/Images/Merge/10.MergeSection2.png" alt="Merge section2 to master"><br>
-
+        <li><strong>git mergetool: </strong> Which fires up an approproate visual merge tool and walks you through the conflicts.</li>
+    </ol>
+    <h4>Undoing Changes</h4>
+    <ol>
+        <li><strong>git reset &lt; CommitId &gt; :</strong>Move head to current commitId but content of the file will
+            not change</li>
+        <li><strong>git reset --hard &lt; CommitId &gt; :</strong> Discard all changes and reset.</li>
+        <li><strong>git revert &lt; CommitId &gt;</strong> Create a new Commit that undoes the changes from a previous
+            commit.</li>
+        <li><strong>git stash</strong> Temporarily save changes that aren't ready to be committed, in staged state.
+            <ol>
+                <li><strong>git stash -u</strong> :Temporarily save changes that are not ready to be commited in
+                    unstaged state </li>
+                <li><strong>git stash list</strong>: Displays list of stashes.</li>
+                <li><strong>git stash apply</strong> : Latest stash will be applied.</li>
+                <li><strong>git stash apply stash@{n}</strong> : This command is used to pick the stash by Id to apply.
+                </li>
+                <li><strong>git stash pop</strong>: This command will apply the latest stash and delete the changes in
+                    the Temporarily location.</li>
+                <li>atleast one commit should be avalable for stash to work.</li>
+                <img src="/Images/UndoChanges/StashError.png" alt="stash StashError" width="650px">
+            </ol>
+        </li>
+        <li><strong>git rm &lt; file_name &gt;</strong>: Remove a file from the working directory and staging area.</li>
+        <li><strong>git checkout --&lt; file_name &gt;</strong>: Discard changes in the working directory for a
+            particular file.</li>
+    </ol>
+    <h4>Git Config & Aliases</h4>
+    <p> Personalizing Git configuration can make working with Git faster and more efficient:</p>
+    <ol>
+        <li>Before global configuration state</li>
+        <img src="/Images/Configs/BeforeAddingGlobalConfigs.png" alt="Before global configuration state" width="600">
+        <li>Empty global configs</li>
+        <img src="/Images/Configs/EmptyGlobalConfigs.png" alt="Empty global configs" width="600">
+        <li><strong>git commit --amend --reset-author</strong> When user name and user email is not configured in global configs of git, by default email is from the system logged in user and domain is the system name</li>
+        <img src="/Images/Configs/UserNameAndEmailUpdate.png" alt="User name and email" width="700">
+        <li><strong>git branch -m main </strong>Initally when defaultbranch is not configured at global level default branch is taken as master. This command is used to update the repository with the global defaultbranch name</li>
+        <img src="/Images/Configs/DefaultMasterBranchBeforeGlobalSetting.png" alt="Before global setting" width="600">
+        <img src="/Images/Configs/CommandToUpdateBranch.png" alt="Command to update" width="600">
+        <img src="/Images/Configs/UpdateDefaultBranchName.png" alt="Updated default branch" width="600">
+        <li><strong>git config</strong>: Set user-specific configuration values like name, email, and editor.
+            <ol>
+                <li>git config --global user.name "nlaxmi1260"  - Setting User Name
+                <li>
+                git config --global user.email "yaram.nlaxmi@gmail.com" - Setting User Email
+                </li>
+                <li>
+                git config --global init.defaultBranch "main"
+                - Setting Default Branch
+                </li>
+                <li>git config --global core.editor "vim" - Setting Default Editor</li>
+                <li>git config --global --list : to get the global configurations
+                </li>
+                <li>git config --global --edit : Command to edit the global configs                </li>
+            </ol>
+        </li>
+        <li><strong> Git Aliases :</strong> You can create aliases for frequently used commands to speed up your workflow. 
+            <ol>
+                <li> git config --global alias.co checkout
+                </li>
+                <li>
+                    git config --global alias.cm commit
+                </li>
+                <li>
+                    git config --global alias.st status
+                </li>
+                <li>
+                    git config --global alias.br branch
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <h4>Git local machine config with GitHub</h4>
+    <ol>
+        <li>Make sure git is installed freshly, remove any config file at ~/ssh/config, remove and ssh keys (both public and private) at ~/ssh.</li>
+        <li>In GitHub website make sure to delete any already configured ssh keys</li>
+        <li>Steps to configure git on local Mac machine</li>
+        <ol>
+            <li><code>git config --global user.name "nlaxmi1260"</code> Command to set name at global level</li>
+            <li><code>git config --global user.email "yaram.nlaxmi@gmail.com" 
+            </code> Command to set email at global level</li>
+            <li><code>git config --global init.defaultbranch=main
+            </code> Command to set defaultBranch at global level</li>
+            <li><code>cd ~/ssh</code> Command to move to ssh folder</li>
+            <li><code>ssh-keygen -t ed25519 -C "yaram.nlaxmi@gmail.com"</code> Command to generate private and public SSH keys, on clicking this command we will get prompt to give a name for the keys and passphase, give a name "Lakshmi"</li>
+            <li><code>cat Lakshmi.pub</code> Command to get the contents of the public key. Copy the contents of the public key file.</li>
+            <li>On GitHub.com after logining in go to setting and SSH and GPG keys section. Click on New SSH key, give a name to the key just to indentify on which machine this key belongs to. Paste the public key </li>
+            <li>If you're using macOS Sierra 10.12.2 or later, you will need to modify your ~/.ssh/config file to automatically load keys into the ssh-agent and store passphrases in your keychain.</li>
+            <li><code>Host github.com </br>
+                AddKeysToAgent yes </br>
+                UseKeychain yes </br>
+                IdentityFile ~/.ssh/Lakshmi</code> </br> add this content to ~/ssh/config file to give private key location if file is not present </br><code>touch ~/ssh/config</code></li>
+            <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key" target="_blank" rel="noopener noreferrer">GitHub generate SSH Key documetation</a></li>
+            <li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="_blank" rel="noopener noreferrer">GitHub add public key documentation</a></li>
+        </ol>
+    </ol>
+    <h4>Collaboration (Remote Repositories)</h4>
+    <p> Managing remote repositories is essential when collaborating with others: </p>
+    <ol>
+        <strong>git remote</strong>: Manage remote repository connections.
+        <li><strong>git remote -v</strong>: List remote repositories</li>
+        <li><strong>git remote add &lt; name &gt; &lt;url &gt;</strong>: Add a new remote repository</li>
+        <li><strong>git remote rm &lt; name &gt;</strong>: Remove a remote repository.</li>
+        <img src="/Images/Collaboration/NewRepoCofigsToLocal.png" alt="New repo config" width="1000">
+        <li>git branch --set-upstream-to=origin/main</li>
     </ol>
 </body>
+
 </html>
