@@ -17,18 +17,23 @@
             files.
             <ol>
                 <li><b>untracked</b>: Untracked files are the files which git is not tracking.</li>
-                <li><b>staged</b>: Staged Changes means the changes that you have decided to commit…</li>
-                <li><b>commited</b>: Commit status allows you to mark commits with status information from other systems.</li>
+                <li><b>staged</b>: Staged Changes means the changes that you have decided to commit…
+                    <ol>
+                        <li><b>git add &lt;file-name&gt;:</b> Add given file to the stageing area.</li>
+                        <li><b>git add .</b> : Add all untracked files to the stageing area.</li>
+                        <li><b>git rm --cached &lt;file-name &gt;:</b> Remove file from staging area to untracked area.</li>
+                    </ol>
+                </li>
+                <li><b>commited</b>: Commit status allows you to mark commits with status information from other systems.
+                    <ol>
+                        <li><b>git commit -m "your commit message"</b> : Commit the staged changes to the local repository with a
+                            message.</li>
+                    </ol>
+                </li>
                 <li><b>modified</b>: After commited the file you again modified the file .</li>
                 <li><b>deleted</b>: The status of a file is deleted either to restore or you have to commit the changes.</li>
             </ol>
-        
         </li>
-        <li><b>git add &lt;file-name&gt;:</b> Add given file to the stageing area.</li>
-        <li><b>git add .</b> : Add all untracked files to the stageing area.</li>
-        <li><b>git rm --cached &lt;file-name &gt;:</b> Remove file from staging area to untracked area.</li>
-        <li><b>git commit -m "your commit message"</b> : Commit the staged changes to the local repository with a
-            message.</li>
         <li><b>git log</b> : Show the commit history for the current branch.</li>
         <li><b>git diff</b> : Show changes between commits ,branches or the working directoy and the index. </li>
         <li><b>git help commit</b> : Help for the commit command.</li>
@@ -39,6 +44,8 @@
         <li><b>git restore --staged &lt;file_name &gt;</b></li>
         <li><b>git rm &lt;file_name &gt;: To remove a file</b></li>
         <li><b>git rm --cached &lt;file_name &gt;: staged to untracked</b></li>
+        <li><b>git mv &lt; source fileName&gt; &lt; destination filename&gt;</b>: To Rename a file</li>
+        <li><b>git commit -a</b> : Whenever a modified file want to commit then we use this command.</li>
     </ol>
     <h3> Uncovered Commands</h3>
     <ol>
@@ -52,6 +59,7 @@
             <ol>
                 <li><strong>git branch</strong> # List all branches</li>
                 <li><strong>git branch &lt;name&gt;</strong> # Create a new branch</li>
+                <li><strong>git checkout -b &lt; branch-name &gt;</strong> # Create a newBranch and checkout to that branch</li>
                 <li><strong>git branch -d &lt;name&gt;</strong> # Delete a branch</li>
             </ol>
         </li>
@@ -200,6 +208,7 @@
         <li><strong>git clone -b &lt;branch-name&gt; &lt; repository-url &gt;</strong>: Clone a remote repository to your local machine with a specific branch.</li>
         <li><strong>git push &lt;remote &gt; &lt;branch &gt;</strong>: Push local commits to a remote repository.</li>
         <li><strong>git pull &lt;remote &gt; &lt;branch &gt;</strong>: Fetch and integrate with another repository or a branch.</li>
+        <li><strong>git push --set-upstream origin &lt; BranchName &gt;</strong>: when you are trying to push to github firsttime</li>
         
     </ol>
     <h4>Advance Git Commands</h4>
