@@ -10,43 +10,48 @@
 
 <body>
     <h1> Git Commands </h1>
-    <h3> Basic Git Commands </h3>
     <ol>
-        <li><b>git init:</b> Initialize a new Git repository in the current directory</li>
-        <li><b>git status:</b> Shows the status of working directory and staging area, displaying changes and untracked
-            files.
+        <li> <b>Basic Git Commands </b>
             <ol>
-                <li><b>untracked</b>: Untracked files are the files which git is not tracking.</li>
-                <li><b>staged</b>: Staged Changes means the changes that you have decided to commit…
+                <li><b>git init:</b> Initialize a new Git repository in the current directory</li>
+                <li><b>git status:</b> Shows the status of working directory and staging area, displaying changes and untracked
+                    files.
                     <ol>
-                        <li><b>git add &lt;file-name&gt;:</b> Add given file to the stageing area.</li>
-                        <li><b>git add .</b> : Add all untracked files to the stageing area.</li>
-                        <li><b>git rm --cached &lt;file-name &gt;:</b> Remove file from staging area to untracked area.</li>
+                        <li><b>untracked</b>: Untracked files are the files which git is not tracking.</li>
+                        <li><b>staged</b>: Staged Changes means the changes that you have decided to commit…
+                            <ol>
+                                <li><b>git add &lt;file-name&gt;:</b> Add given file to the stageing area.</li>
+                                <li><b>git add .</b> : Add all untracked files to the stageing area.</li>
+                                <li><b>git rm --cached &lt;file-name &gt;:</b> Remove file from staging area to untracked area.</li>
+                            </ol>
+                        </li>
+                        <li><b>commited</b>: Commit status allows you to mark commits with status information from other systems.
+                            <ol>
+                                <li><b>git commit -m "your commit message"</b> : Commit the staged changes to the local repository with a
+                                    message.</li>
+                            </ol>
+                        </li>
+                        <li><b>modified</b>: After commited the file you again modified the file .</li>
+                        <li><b>deleted</b>: The status of a file is deleted either to restore or you have to commit the changes.</li>
                     </ol>
                 </li>
-                <li><b>commited</b>: Commit status allows you to mark commits with status information from other systems.
-                    <ol>
-                        <li><b>git commit -m "your commit message"</b> : Commit the staged changes to the local repository with a
-                            message.</li>
-                    </ol>
-                </li>
-                <li><b>modified</b>: After commited the file you again modified the file .</li>
-                <li><b>deleted</b>: The status of a file is deleted either to restore or you have to commit the changes.</li>
+                <li><b>git log</b> : Show the commit history for the current branch.</li>
+                <li><b>git diff</b> : Show changes between commits ,branches or the working directoy and the index. </li>
+                <li><b>git help commit</b> : Help for the commit command.</li>
+                <li><b>git checkout &lt;branch-name&gt;</b>: Switch branches or restore working tree files.</li>
+                <li><b>git rm &lt;file_name &gt;</b>: To remove a file.</li>
+                <li><b>git restore &lt; file_name &gt;</b>: To discard changes in working directory i.e previous commit changes will
+                    be avalable.</li>
+                <li><b>git restore --staged &lt;file_name &gt;</b></li>
+                <li><b>git rm &lt;file_name &gt;: To remove a file</b></li>
+                <li><b>git rm --cached &lt;file_name &gt;: staged to untracked</b></li>
+                <li><b>git mv &lt; source fileName&gt; &lt; destination filename&gt;</b>: To Rename a file</li>
+                <li><b>git commit -a</b> : Whenever a modified file want to commit then we use this command.</li>
             </ol>
         </li>
-        <li><b>git log</b> : Show the commit history for the current branch.</li>
-        <li><b>git diff</b> : Show changes between commits ,branches or the working directoy and the index. </li>
-        <li><b>git help commit</b> : Help for the commit command.</li>
-        <li><b>git checkout &lt;branch-name&gt;</b>: Switch branches or restore working tree files.</li>
-        <li><b>git rm &lt;file_name &gt;</b>: To remove a file.</li>
-        <li><b>git restore &lt; file_name &gt;</b>: To discard changes in working directory i.e previous commit changes will
-            be avalable.</li>
-        <li><b>git restore --staged &lt;file_name &gt;</b></li>
-        <li><b>git rm &lt;file_name &gt;: To remove a file</b></li>
-        <li><b>git rm --cached &lt;file_name &gt;: staged to untracked</b></li>
-        <li><b>git mv &lt; source fileName&gt; &lt; destination filename&gt;</b>: To Rename a file</li>
-        <li><b>git commit -a</b> : Whenever a modified file want to commit then we use this command.</li>
     </ol>
+    
+   
     <h3> Branching </h3>
     <ol>
         <li><strong>git branch :</strong> Manage branches
